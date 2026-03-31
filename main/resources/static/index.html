@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance System - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1 class="logo">Workspace</h1>
+            <h2>Welcome Back</h2>
+            <p>Enter your Employee ID to access the attendance dashboard.</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="employeeId">Employee ID</label>
+                    <input type="text" id="employeeId" name="employeeId" placeholder="e.g. EMP001" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div id="loginError" class="error-message" style="display: none;"></div>
+                <button type="submit" class="btn btn-primary btn-block">Secure Log In</button>
+            </form>
+            <div class="test-credentials">
+                Test accounts: <strong>EMP001</strong>, <strong>EMP002</strong>, <strong>ADMIN</strong>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
